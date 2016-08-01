@@ -1,16 +1,18 @@
 %head
     %title Personal Website
-    %link{href:"https://fonts.googleapis.com/css?family=Oswald", rel:"stylesheet", type:"text/css"}
-    %link{href:"https://fonts.googleapis.com/css?family=Special+Elite", rel:"stylesheet", type:"text/css"}
-    %link{href:"https://fonts.googleapis.com/css?family=Lobster|Bowlby+One+SC", rel:"stylesheet", type:"text/css"}
-    %link{href:"https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow", rel:"stylesheet", type:"text/css"}
-    %link{href:"https://fonts.googleapis.com/css?family=Jacques+Francois", rel:"stylesheet", type:"text/css"}
-    %link{ rel:"stylesheet" href:"animate.css"}
 	
+    / %link{href:"https://fonts.googleapis.com/css?family=Oswald", rel:"stylesheet", type:"text/css"}
+    / %link{href:"https://fonts.googleapis.com/css?family=Bungee+Hairline|Quicksand", rel:"stylesheet", type:"text/css"}
+	
+    / %link{href:"https://fonts.googleapis.com/css?family=Special+Elite", rel:"stylesheet", type:"text/css"}
+    / %link{href:"https://fonts.googleapis.com/css?family=Lobster|Bowlby+One+SC", rel:"stylesheet", type:"text/css"}
+    / %link{href:"https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow", rel:"stylesheet", type:"text/css"}
+    / %link{href:"https://fonts.googleapis.com/css?family=Jacques+Francois", rel:"stylesheet", type:"text/css"}
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
     = javascript_include_tag 'application', 'data-turbolinks-track' => true 
     = csrf_meta_tags 
     </head>
+	
 %body
 
     = yield 

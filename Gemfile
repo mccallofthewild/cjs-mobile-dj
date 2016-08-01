@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-sass'
 gem 'compass'
 gem "animate-rails"
+gem 'autoprefixer-rails', '~> 6.3'
 
 
 # Use Uglifier as compressor for JavaScript assets
