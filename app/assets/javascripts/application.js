@@ -62,10 +62,10 @@ $(document).ready(function(){
 	function runRunWords(array){
 		for(i=0; i < array.length; i++){
 			runWords(i, array);
-	
+
 		}
-	}	
-		
+	}
+
 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A RHYTHM HAS THE POWER TO</span>");}, 0 );
 
 
@@ -83,7 +83,7 @@ setTimeout(function(){	$('.real-text:eq(1)').removeClass("glitch-mob");}, 28250)
 	//---------- TIMER FUNCTIONS END
 
 	// ----------- TIMER FUNCTIONS SKIP
-
+//
 // 	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 0);
 // setTimeout(function(){	$('.real-text').show(); $('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 2000);
 // setTimeout(function(){	$('.real-text:eq(1)').addClass("glitch-mob");}, 10500);
