@@ -4,15 +4,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
 gem 'pg'
+gem 'sprockets', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'compass-rails'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-sass'
-gem 'compass'
 gem "animate-rails"
-gem 'autoprefixer-rails', '~> 6.3'
+# gem 'autoprefixer-rails', '~> 6.3'
 
 
 # Use Uglifier as compressor for JavaScript assets
