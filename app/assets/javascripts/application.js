@@ -49,46 +49,46 @@ $(document).ready(function(){
 		
 	
 	// ----------- TIMER FUNCTIONS ------------
-	var a = 3000;
-	var b = 0;
-	var power = ["IGNITE", "INSPIRE", "MOVE", "HELP", "CHANGE", "BUILD", "CHARGE", "LEAD", "RENEW", "IMPROVE", "ENCHANT", "RISE", "CHALLENGE", "CREATE", "THRILL", "SENSE", "DISCOVER", "AMAZE", ""];
-	var feel = ["FREE", "STRONG", "BRAVE", "ADVENTUROUS", "CURIOUS", "BOLD", "BRILLIANT", "WARM", "LUCKY", "VIVID","FANTASTIC", "INCREDIBLE", "ALIVE", "ALIVE", ""];
-	function runWords(i, array){
-		b = Math.random() * 500;
-		a = a + b;
-		setTimeout(function(){$('.text-area').html(array[i]);}, a);
-
-	}
-	function runRunWords(array){
-		for(i=0; i < array.length; i++){
-			runWords(i, array);
-
-		}
-	}
-
-	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A RHYTHM HAS THE POWER TO</span>");}, 0 );
-
-
-	setTimeout(runRunWords(power), 3000);
-	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A BEAT CAN MAKE YOU FEEL</span>");}, 9000);
-	setTimeout(function(){runRunWords(feel);}, 5000);
-
-	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 17000);
-setTimeout(function(){	$('.real-text').show();}, 19000);
-setTimeout(function(){	$('.real-text:eq(1)').addClass("glitch-mob");}, 27500);
-setTimeout(function(){	$('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 28000);
-setTimeout(function(){	$('.real-text:eq(1)').removeClass("glitch-mob");}, 28250);
-
+// 	var a = 3000;
+// 	var b = 0;
+// 	var power = ["IGNITE", "INSPIRE", "MOVE", "HELP", "CHANGE", "BUILD", "CHARGE", "LEAD", "RENEW", "IMPROVE", "ENCHANT", "RISE", "CHALLENGE", "CREATE", "THRILL", "SENSE", "DISCOVER", "AMAZE", ""];
+// 	var feel = ["FREE", "STRONG", "BRAVE", "ADVENTUROUS", "CURIOUS", "BOLD", "BRILLIANT", "WARM", "LUCKY", "VIVID","FANTASTIC", "INCREDIBLE", "ALIVE", "ALIVE", ""];
+// 	function runWords(i, array){
+// 		b = Math.random() * 500;
+// 		a = a + b;
+// 		setTimeout(function(){$('.text-area').html(array[i]);}, a);
+//
+// 	}
+// 	function runRunWords(array){
+// 		for(i=0; i < array.length; i++){
+// 			runWords(i, array);
+//
+// 		}
+// 	}
+//
+// 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A RHYTHM HAS THE POWER TO</span>");}, 0 );
+//
+//
+// 	setTimeout(runRunWords(power), 3000);
+// 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A BEAT CAN MAKE YOU FEEL</span>");}, 9000);
+// 	setTimeout(function(){runRunWords(feel);}, 5000);
+//
+// 	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 17000);
+// setTimeout(function(){	$('.real-text').show();}, 19000);
+// setTimeout(function(){	$('.real-text:eq(1)').addClass("glitch-mob");}, 27500);
+// setTimeout(function(){	$('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 28000);
+// setTimeout(function(){	$('.real-text:eq(1)').removeClass("glitch-mob");}, 28250);
+//
 
 	//---------- TIMER FUNCTIONS END
 
 	// ----------- TIMER FUNCTIONS SKIP
-//
-// 	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 0);
-// setTimeout(function(){	$('.real-text').show(); $('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 2000);
-// setTimeout(function(){	$('.real-text:eq(1)').addClass("glitch-mob");}, 10500);
-// setTimeout(function(){	$('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 10500);
-// setTimeout(function(){	$('.real-text:eq(1)').removeClass("glitch-mob");}, 11250);
+
+	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 0);
+setTimeout(function(){	$('.real-text').show(); $('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 2000);
+setTimeout(function(){	$('.real-text:eq(1)').addClass("glitch-mob");}, 10500);
+setTimeout(function(){	$('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 10500);
+setTimeout(function(){	$('.real-text:eq(1)').removeClass("glitch-mob");}, 11250);
 
 	// SKIP COMPLETE
 
