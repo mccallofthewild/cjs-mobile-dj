@@ -84,7 +84,6 @@ p{
 	    background-size: cover;
 	    background-attachment: fixed;
 	    height: 51%;
-		height:25%;
 	    padding-left: 0;
 	    padding-right: 0;
 		background-position:bottom;
@@ -170,7 +169,7 @@ p{
 	color:$second;
 }
 .background-4{
-	background-image:url(https://hd.unsplash.com/photo-1458560871784-56d23406c091);
+	background-image:url(record-player-sml.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
     background-position: center;
@@ -180,6 +179,8 @@ p{
 	    display: flex;
 	    flex-direction: column;
 	    justify-content: center;
+		padding-bottom:50%;
+		margin:5%;
 		.p{
 			margin-bottom:25%;
 		}
@@ -378,7 +379,11 @@ $svg : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$w} #{$h}"><polyl
 		p{
 			font-size:4.4em;
 		}
-		
+		.background-2{
+			.mask-bg{
+				height:25%;
+			}
+		}
 	}
 }
 
