@@ -54,7 +54,7 @@ $(document).ready(function(){
 	var power = ["IGNITE", "INSPIRE", "MOVE", "HELP", "CHANGE", "BUILD", "CHARGE", "LEAD", "RENEW", "IMPROVE", "ENCHANT", "RISE", "CHALLENGE", "CREATE", "THRILL", "SENSE", "DISCOVER", "AMAZE", ""];
 	var feel = ["FREE", "STRONG", "BRAVE", "ADVENTUROUS", "CURIOUS", "BOLD", "BRILLIANT", "WARM", "LUCKY", "VIVID","FANTASTIC", "INCREDIBLE", "ALIVE", "ALIVE", ""];
 	function runWords(i, array){
-		b = Math.random() * 500;
+		b = Math.random() * 300;
 		a = a + b;
 		setTimeout(function(){$('.text-area').html(array[i]);}, a);
 
@@ -66,34 +66,72 @@ $(document).ready(function(){
 		}
 	}
 
-	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A RHYTHM HAS THE POWER TO</span>");}, 0 );
+// 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A RHYTHM HAS THE POWER TO</span>");}, 0 );
+//
+//
+// 	setTimeout(runRunWords(power), 3000);
+// 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A BEAT CAN MAKE YOU FEEL</span>");}, 9000);
+// 	setTimeout(function(){runRunWords(feel);}, 5000);
+//
+// 	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 17000);
+// setTimeout(function(){	  $('.real-text').show(); $('.cta-bttn').show();}, 19000);
+// setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 27500);
+// setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 28000);
+// setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 28250);
 
+// SHORTER TIMER FUNCTIONS
 
-	setTimeout(runRunWords(power), 3000);
-	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A BEAT CAN MAKE YOU FEEL</span>");}, 9000);
-	setTimeout(function(){runRunWords(feel);}, 5000);
+	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>MUSIC CAN MAKE YOU FEEL</span>");}, 0);
+	setTimeout(function(){runRunWords(feel);}, 3000);
 
-	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 17000);
-setTimeout(function(){	$('.real-text').show();}, 19000);
-setTimeout(function(){	$('.real-text:eq(1)').addClass("glitch-mob");}, 27500);
-setTimeout(function(){	$('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 28000);
-setTimeout(function(){	$('.real-text:eq(1)').removeClass("glitch-mob");}, 28250);
+	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 11000);
+setTimeout(function(){	  $('.real-text').show(); $('.cta-bttn').show();}, 13000);
+setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 21500);
+setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 22000);
+setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 22250);
 
+// SHORTER TIMER FUNCTIONS OVER
 
 	//---------- TIMER FUNCTIONS END
 
 	// ----------- TIMER FUNCTIONS SKIP
 //
 // 	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 0);
-// setTimeout(function(){	$('.real-text').show(); $('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 2000);
-// setTimeout(function(){	$('.real-text:eq(1)').addClass("glitch-mob");}, 10500);
-// setTimeout(function(){	$('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 10500);
-// setTimeout(function(){	$('.real-text:eq(1)').removeClass("glitch-mob");}, 11250);
+// setTimeout(function(){	$('.real-text').show(); $('.cta-bttn').show(); $('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 2000);
+// setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 10500);
+// setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 10500);
+// setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 11250);
 
 	// SKIP COMPLETE
 
 	//-------------- EVENT LISTENER FUNCTIONS
+$(document).scroll(function(){
+	
+	var scrollpos = $('body').scrollTop();
+	var btnpos = $('.cta-bttn').position().top;
+	// if (scrollpos + 10 > btnpos){
+	// 	$('.nav-bttn').show()
+	// }else if(scrollpos + 10 < btnpos){
+	// 	$('.nav-bttn').fadeOut()
+	//
+	// }
+	if (scrollpos > 10){
+	$('.nav-row').addClass('nav-row-solid');
+	}else if (scrollpos < 10){
+	$('.nav-row').removeClass('nav-row-solid');
+	}else{}
+	
+});
 
+
+$('.open-bttn').click(function(){
+	$('iframe').fadeIn();
+	$('.nav-row-close').fadeIn();
+})
+$('.close-bttn').click(function(){
+	$('iframe').fadeOut();
+	$('.nav-row-close').fadeOut();
+})
 function hoverText(selector, text, bgColor, bgImage){
 	$(selector + ':eq(1)').css({'opacity':'0'});
 	// $(selector).hover(

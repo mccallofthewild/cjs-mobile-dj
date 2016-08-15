@@ -2,7 +2,7 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "animate";
+//@import "animate";
 @font-face {
   font-family: 'Bungee Hairline';
   font-style: normal;
@@ -46,14 +46,72 @@
 	$third:#00ADB5;
 	$fourth:#EEEEEE;
 	$fourth-translucent:rgba(238,238,238,0.9);
+	
+//	FONTS
+
+$title-font: 'Bungee Hairline', sans-serif;
 body{
   background:$first;
   color:$fourth;
   text-align:center;
   font-family: Quicksand, Sans-serif;
 }
+.nav-row{
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+	
+	
+	transition:color 0.3s linear, background-color 0.3s linear;
+	width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+    margin: 0;
+	margin-top:-1px;
+    padding-bottom: 10px;
+	font-weight:bold;
+	.nav-bttn{
+		margin-top:20px;
+		float:right;
+		
+	}
+	h1{
+		font-family:$title-font;
+		font-weight:bold;
+	}
+}
+.nav-row-solid{
+	transition:color 0.3s linear, background-color 0.3s linear;
+	background-color:white;
+	color:$first;
+	.nav-bttn{
+		color:white;
+		background-color:$third;
+		border-color:$third;
+		&:hover{
+			background-color:$first;
+			color:$fourth;
+			border-color:$first;
+		}
+	}
+	
+}
+.nav-row-close{
+	display:none;
+	position: fixed; 
+	top: 3%; 
+	z-index: 2147483647; 
+	right: 25px; 
+	width: auto; 
+	height: 0px; 
+	background-color: transparent;
+}
 h1{
-    font-size: 6em;
+    font-size: 3em;
 }
 h2{
 	font-size:2.5em;
@@ -68,9 +126,45 @@ h4{
 p{
 	font-size:1.4em;
 }
+a, a:hover, a:focus{
+	text-decoration:none;
+	color:inherit;
+}
+.bttn{
+	transition:color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear;
+    color: $fourth;
+	font-size:1.4em;
+	font-weight:bold;
+    padding: 10px 41px;
+	border:2px solid;
+    border-radius: 26px;
+	&:hover{
+		transition:color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear;
+		color:$first;
+		background-color:$fourth;
+		border-color:$fourth;
+		cursor:pointer;
+		text-decoration:none;
+	    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	}
+}
+.cta-bttn{
+	border:none;
+    margin-top: 68px;
+    padding: 17px 61px;
+    border-radius: 61px;
+    background-color: $fourth;
+    color: $first;
+	&:hover{
+	    color: $fourth;
+	    background-color: $second;
+	}
+}
+
 .background-1{
 	
     background-image: url(hands-crowd-bg.gif);
+    background-image: url(gear-bg-sml.jpg);
     background-size: cover;
 	
 }
@@ -173,7 +267,7 @@ p{
 	background-size:cover;
 	background-repeat:no-repeat;
     background-position: center;
-	color:$first;
+	color:$second;
 	.nested-text{
 	    height: 100%;
 	    display: flex;
@@ -186,6 +280,9 @@ p{
 		}
 	}
 	
+}
+.background-last{
+	background-color:$fourth;
 }
 .flex-middle{
     display: flex;
@@ -211,22 +308,21 @@ p{
 	font-size:6em;
 	
 }
-h1.real-text{
-    margin-bottom: 68px;
-	margin-top:0px;
-    font-family: 'Bungee Hairline', sans-serif;
-}
 h2.real-text{
+    margin-bottom: 68px;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+h1.real-text{
 	margin-top:68px;
 }
 .record-img{
     background-image: url(record.svg);
 	background-size:cover;
-    height: 40px;
+    height: 1em;
     display: inline-block;
-    width: 40px;
+    width: 1em;
 	margin:0;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 .real-text{
 }
@@ -237,11 +333,11 @@ h2.real-text{
 
 }
 .first-row{
-    background: rgba(34,40,49,0.97);
+    background: rgba(34,40,49,0.65);
 }
 .second-row{
 }
-@import "compass/css3";
+//@import "compass/css3";
 
 
 %effect{
@@ -365,23 +461,35 @@ $svg : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$w} #{$h}"><polyl
 @media only screen and (min-device-width : 320px) and (max-device-width :480px){
 	body{
 		h1{
-			font-size:7em;
+			font-size:2em;
 		}
 		h2{
-			font-size:3em;
+			font-size:1.25em;
 		}
 		h3{
-			font-size:8em;
+			
 		}
 		h4{
-			font-size:5.75em;
+			
 		}
 		p{
-			font-size:4.4em;
+			
+		}
+		.text-area{
+			font-size:2em;
 		}
 		.background-2{
 			.mask-bg{
 				height:25%;
+			}
+		}
+		.nav-row-close{
+			top:0;
+			right:0;
+			.close-bttn{
+			    font-size: 1em;
+			    padding: 0;
+			    border-radius: 0;
 			}
 		}
 	}
@@ -509,6 +617,27 @@ iPad 3
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
 /* Styles */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3861,4 +3990,18 @@ iPad 3
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+.iframe-html{
+margin: 0;
+height: 100%;
+overflow:hidden
+}
+iframe{
+position: fixed;
+left:0;
+right:0;
+bottom:0;
+top:0;
+border:0;
+z-index: 888888888888;
 }

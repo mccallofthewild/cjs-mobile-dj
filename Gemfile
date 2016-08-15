@@ -7,11 +7,10 @@ gem 'pg'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'compass-rails'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-sass'
-gem "animate-rails"
+# gem "animate-rails"
 # gem 'autoprefixer-rails', '~> 6.3'
 
 
