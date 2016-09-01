@@ -82,13 +82,13 @@ $(document).ready(function(){
 // SHORTER TIMER FUNCTIONS
 
 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>MUSIC CAN MAKE YOU FEEL</span>");}, 0);
-	setTimeout(function(){runRunWords(feel);}, 3000);
+	setTimeout(function(){runRunWords(feel);}, 1500);
 
-	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 11000);
-setTimeout(function(){	  $('.real-text').show(); $('.cta-bttn').show();}, 13000);
-setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 21500);
-setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 22000);
-setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 22250);
+	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 9500);
+setTimeout(function(){	  $('.real-text').show(); $('.cta-bttn').show();}, 11500);
+setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 20000);
+setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 20500);
+setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 20750);
 
 // SHORTER TIMER FUNCTIONS OVER
 
