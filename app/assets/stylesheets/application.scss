@@ -56,6 +56,12 @@ body{
   text-align:center;
   font-family: Quicksand, Sans-serif;
 }
+.inline{
+	display:inline;
+}
+.accent{
+	color:$third;
+}
 .nav-row{
 //    display: flex;
 //    flex-direction: column;
@@ -164,7 +170,7 @@ a, a:hover, a:focus{
 .background-1{
 	
     background-image: url(hands-crowd-bg.gif);
-    background-image: url(gear-bg-sml.jpg);
+    background-image: url(dancing.jpg);
     background-size: cover;
 	
 }
@@ -282,7 +288,25 @@ a, a:hover, a:focus{
 	
 }
 .background-last{
-	background-color:$fourth;
+//	background-color:$fourth;
+
+}
+.footer{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	.footer-image{
+	    margin-bottom: 2%;
+	    height: 13%;
+	}
+	address{
+	    font-size: 1.5em;
+	    margin-top: 2%;
+		}
+}
+.footer-group{
+	margin:2%;
+	margin-bottom:4%;
 }
 .flex-middle{
     display: flex;
@@ -306,7 +330,6 @@ a, a:hover, a:focus{
 	width:100%;
 	text-align:center;
 	font-size:6em;
-	
 }
 h2.real-text{
     margin-bottom: 68px;
