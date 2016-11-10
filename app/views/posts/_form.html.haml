@@ -1,0 +1,39 @@
+// -if @post.errors.any?
+//   .error#error_explanation
+//   %h2= pluralize(@post.errors.count, "error")
+//   %h2= prohibited this post from being saved:
+//   -@post.errors.full_messages.each do |message|
+//     %li=message
+.container-fluid.form-page
+  .form-container
+    =form_for(@post) do |f|
+      .row
+        .form-field-container
+          .field
+            =f.label :title
+            =f.text_area :title, class:"form-control simple-entry"
+          .field
+            =f.label :subtitle
+            =f.text_area :subtitle, class:"form-control simple-entry"
+          .field
+            =f.label :author
+            =f.text_area :author, class:"form-control simple-entry"
+          .field
+            =f.label :pathname
+            =f.text_field :pathname, class:"form-control simple-entry"
+      .row
+        .col-xs-12
+          .field
+            =f.label :body
+            =f.text_area :body, class:"form-control", id:"edit", value:"", style:"height:200%"
+      .row
+        .col-xs-12.col-md-4.col-md-offset-4
+          .field
+          =f.submit class:"btn btn-primary"
+          
+<script>
+
+$(function() {
+$('#edit').froalaEditor()
+});
+</script>

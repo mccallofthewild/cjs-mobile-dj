@@ -3,14 +3,10 @@
 	%meta{name:"description", content:"GIVE YOUR NEXT EVENT A PULSE."}
 	%meta{name:"keywords", content:"boise dj, boise wedding dj, idaho dj, best boise djs, idaho wedding dj, mccall wedding dj, sun valley wedding dj, boise event lighting, boise wedding lighting, boise dj, boise disc jockey, idaho disc jockey, boise event lighting"}
 	=favicon_link_tag 'record.png', rel: 'shortcut icon', type: 'image/png'
-	/ %link{href:"https://fonts.googleapis.com/css?family=Oswald", rel:"stylesheet", type:"text/css"}
-	/ %link{href:"https://fonts.googleapis.com/css?family=Bungee+Hairline|Quicksand", rel:"stylesheet", type:"text/css"}
-
-	/ %link{href:"https://fonts.googleapis.com/css?family=Special+Elite", rel:"stylesheet", type:"text/css"}
-	/ %link{href:"https://fonts.googleapis.com/css?family=Lobster|Bowlby+One+SC", rel:"stylesheet", type:"text/css"}
-	/ %link{href:"https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow", rel:"stylesheet", type:"text/css"}
-	/ %link{href:"https://fonts.googleapis.com/css?family=Jacques+Francois", rel:"stylesheet", type:"text/css"}
+	-fonts = %w(Lusitana Open+Sans Roboto:900)
+	!=gfont(fonts)
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
+	= stylesheet_link_tag params[:controller]
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
 	= csrf_meta_tags 
 	</head>

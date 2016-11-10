@@ -1,0 +1,14 @@
+// Place all the styles related to the Blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.blog-list{
+    color:pink;
+    .blog{
+        margin:2.5%;
+        padding:5%;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8)
+    }
+}
+.blog{
+    color:pink;
+}
