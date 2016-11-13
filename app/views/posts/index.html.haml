@@ -11,7 +11,7 @@
           %small= post.subtitle
         %p= post.author
         %p.fr-view!=post.body.truncate_words(28)
-        = link_to 'Show', blog_post_path(post.pathname)
+        = link_to 'Show', blog_post_path(post.pathname||)
         = link_to 'Edit', edit_post_path(post)
         = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
 = link_to 'New Post', new_post_path

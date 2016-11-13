@@ -1,5 +1,5 @@
 .container-fluid.background-1
-	.row.first-row
+	.row.dark-row
 		.row.nav-row
 			/ %h1 CJ's Mobile DJ
 			/ %a.bttn.open-bttn.nav-bttn{style:"display:none;"} GET A QUOTE
@@ -14,7 +14,6 @@
 		.col-xs-0.col-md-2
 		.col-xs-12.col-md-8
 			.flex-area
-				/ %h1.real-text.animated.fadeIn{style:"display:none; animation-delay: 0.25s; animation-duration:2.5s;"} CJ's MOBILE DJ
 				%h2.real-text.animated.fadeIn{style:"display:none; animation-duration:3s; animation-delay: 1.75s;"} GIVE YOUR NEXT EVENT A PULSE
 				.text-area-wrap
 					%span.text-area.text-area-main#text-area
@@ -56,19 +55,19 @@
 .container-fluid.background-2
 	%h3 WE DO IT ALL
 	.row.second-row
-		.col-xs-6.col-md-6.mask-bg.wedding-bg
+		.col-xs-.col-md-6.mask-bg.wedding-bg
 			.word-mask.weddings
 			.under-mask.weddings
 				%p.flex-middle
-		.col-xs-6.col-md-6.mask-bg.party-bg
+		.col-xs-.col-md-6.mask-bg.party-bg
 			.word-mask.parties
 			.under-mask.parties
 				%p.flex-middle Make my wedding pulse
-		.col-xs-6.col-md-6.mask-bg.dance-bg
+		.col-xs-.col-md-6.mask-bg.dance-bg
 			.word-mask.dances
 			.under-mask.dances
 				%p.flex-middle Make my wedding pulse
-		.col-xs-6.col-md-6.mask-bg.special-event-bg
+		.col-xs-.col-md-6.mask-bg.special-event-bg
 			.word-mask.special-events
 			.under-mask.special-events
 				%p.flex-middle Make my wedding pulse
@@ -83,11 +82,10 @@
 		.col-xs-0.col-md-7
 .container-fluid.background-last
 	.row.footer
-		.footer-group 
+		.col-md-4.col-md-offset-4
 			%br 
 			=image_tag "record.svg", class:"footer-image" 
 			%br 
-		.col-md-4.col-md-offset-4
 			%a.bttn.open-bttn GET A QUOTE 
 			%br 
 			%address
@@ -123,8 +121,7 @@
 			
 .nav-row-solid.nav-row-close
 	%a.bttn.nav-bttn.close-bttn{style:"display:block;z-index:9999999999"} EXIT FORM
-			
-	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 			
 			
 			

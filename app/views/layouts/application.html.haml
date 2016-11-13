@@ -3,12 +3,14 @@
 	%meta{name:"description", content:"GIVE YOUR NEXT EVENT A PULSE."}
 	%meta{name:"keywords", content:"boise dj, boise wedding dj, idaho dj, best boise djs, idaho wedding dj, mccall wedding dj, sun valley wedding dj, boise event lighting, boise wedding lighting, boise dj, boise disc jockey, idaho disc jockey, boise event lighting"}
 	=favicon_link_tag 'record.png', rel: 'shortcut icon', type: 'image/png'
-	-fonts = %w(Lusitana Open+Sans Roboto:900)
+	-fonts = %w(Lusitana Open+Sans Roboto:900 Anton Chelsea+Market Montserrat)
+	
 	!=gfont(fonts)
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
 	= stylesheet_link_tag params[:controller]
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
 	= csrf_meta_tags 
+
 	</head>
 
 %body

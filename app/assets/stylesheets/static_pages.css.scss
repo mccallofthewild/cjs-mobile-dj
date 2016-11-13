@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import 'variables';
 @import 'nav';
-
 .bttn{
 	transition:color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear;
     color: $fourth;
@@ -201,7 +200,7 @@
 }
 h2.real-text{
     margin-bottom: 68px;
-    text-shadow: 1px 1px rgba(0,0,0,0.5);
+    /*text-shadow: 1px 1px rgba(0,0,0,0.5);*/
 }
 h1.real-text{
 	margin-top:68px;
@@ -221,9 +220,9 @@ h1.real-text{
     font-size: 3em;
 }
 .sentence-text{
-
+	
 }
-.first-row{
+.dark-row{
     background: rgba(34,40,49,0.65);
 }
 .second-row{
@@ -242,6 +241,7 @@ h1.real-text{
 .text-area{
 //  @extend %effect;
   display:inline-block;
+
 }
 
 $bg: #222222;
@@ -526,3 +526,6 @@ top:0;
 border:0;
 z-index: 888888888888;
 }
+
+
+@import 'weddings';

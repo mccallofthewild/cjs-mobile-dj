@@ -1,7 +1,7 @@
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+// = require jquery
+// = require jquery_ujs
+// = require turbolinks
+// = require_tree .
 //
 //= require froala_editor.min.js
 //
@@ -31,106 +31,101 @@
 //= require plugins/table.min.js
 //= require plugins/url.min.js
 //= require plugins/video.min.js
+
+
 $(document).ready(function(){
-	// ------------ GLITCH ANIMATION -----------
+// 	// ------------ GLITCH ANIMATION -----------
 	
-	setInterval( function(){ 
-			var x = 10 - Math.random() * 20; 
-			var y = 3 - Math.random() * 6;
-			var f = 3 - Math.random() * 6; 
-			var g = 3 - Math.random() * 6;
-			var z = 15 - Math.random() * 30; 
-			var k = 5 - Math.random() * 10; 
+// 	setInterval( function(){ 
+// 			var x = 10 - Math.random() * 20; 
+// 			var y = 3 - Math.random() * 6;
+// 			var f = 3 - Math.random() * 6; 
+// 			var g = 3 - Math.random() * 6;
+// 			var z = 15 - Math.random() * 30; 
+// 			var k = 5 - Math.random() * 10; 
 			
-			var colorOne = 255 * Math.random();
-			var colorTwo = 255 * Math.random();
-			var colorThree = 255 * Math.random();
+// 			var colorOne = 255 * Math.random();
+// 			var colorTwo = 255 * Math.random();
+// 			var colorThree = 255 * Math.random();
 			
-			var colorFour = 255 * Math.random();
+// 			var colorFour = 255 * Math.random();
 			
-			var colorFive = 255 * Math.random();
+// 			var colorFive = 255 * Math.random();
 			
-			var colorSix = 255 * Math.random();
+// 			var colorSix = 255 * Math.random();
 			
-			var opacity = 1.3 - Math.random();
+// 			var opacity = 1.3 - Math.random();
 			
-			var textOpacity = 1.5 - Math.random();
+// 			var textOpacity = 1.5 - Math.random();
 			
 			
-			var textColor = 'rgba(255, 255, 255, ' + textOpacity + ')';
+// 			var textColor = 'rgba(255, 255, 255, ' + textOpacity + ')';
 			
-			var d = Math.round(x) + 'px ' + Math.round(y) + 'px' + ' rgba(' + Math.round(colorOne) + ',' + '0' + ',' + Math.round(colorThree) + ',' + opacity + ')'; 
-			var v = Math.round(z) + 'px ' + Math.round(k) + 'px' + ' rgba(' + '0' + ', ' + Math.round(colorFive) + ', ' + Math.round(colorSix) + ', ' + opacity + ')'; 
-			var a =  d + ', ' + v
+// 			var d = Math.round(x) + 'px ' + Math.round(y) + 'px' + ' rgba(' + Math.round(colorOne) + ',' + '0' + ',' + Math.round(colorThree) + ',' + opacity + ')'; 
+// 			var v = Math.round(z) + 'px ' + Math.round(k) + 'px' + ' rgba(' + '0' + ', ' + Math.round(colorFive) + ', ' + Math.round(colorSix) + ', ' + opacity + ')'; 
+// 			var a =  d + ', ' + v
 			
-			var e = 'translate(' + f + 'px' + ',' + g + 'px' + ')';
+// 			var e = 'translate(' + f + 'px' + ',' + g + 'px' + ')';
 			
-			$('.text-area').css({ 
-			'transform': e , 
-			'text-shadow': a ,
-			'color': textColor
-			});
-		}, 50);
+// 			$('.text-area').css({ 
+// 			'transform': e , 
+// 			'text-shadow': a ,
+// 			'color': textColor
+// 			});
+// 		}, 50);
 		
-	// ----------- GLITCH ANIMATION END -------------
+// 	// ----------- GLITCH ANIMATION END -------------
 		
 		
 		
 	
-	// ----------- TIMER FUNCTIONS ------------
-	var a = 3000;
-	var b = 0;
-	var power = ["IGNITE", "INSPIRE", "MOVE", "HELP", "CHANGE", "BUILD", "CHARGE", "LEAD", "RENEW", "IMPROVE", "ENCHANT", "RISE", "CHALLENGE", "CREATE", "THRILL", "SENSE", "DISCOVER", "AMAZE", ""];
-	var feel = ["FREE", "STRONG", "BRAVE", "ADVENTUROUS", "CURIOUS", "BOLD", "BRILLIANT", "WARM", "LUCKY", "VIVID","FANTASTIC", "INCREDIBLE", "ALIVE", "ALIVE", ""];
-	function runWords(i, array){
-		b = Math.random() * 300;
-		a = a + b;
-		setTimeout(function(){$('.text-area').html(array[i]);}, a);
+// 	// ----------- TIMER FUNCTIONS ------------
+// 	var a = 3000;
+// 	var b = 0;
+// 	var power = ["IGNITE", "INSPIRE", "MOVE", "HELP", "CHANGE", "BUILD", "CHARGE", "LEAD", "RENEW", "IMPROVE", "ENCHANT", "RISE", "CHALLENGE", "CREATE", "THRILL", "SENSE", "DISCOVER", "AMAZE", ""];
+// 	var feel = ["FREE", "STRONG", "BRAVE", "ADVENTUROUS", "CURIOUS", "BOLD", "BRILLIANT", "WARM", "LUCKY", "VIVID","FANTASTIC", "INCREDIBLE", "ALIVE", "ALIVE", ""];
+// 	function runWords(i, array){
+// 		b = Math.random() * 300;
+// 		a = a + b;
+// 		setTimeout(function(){$('.text-area').html(array[i]);}, a);
 
-	}
-	function runRunWords(array){
-		for(i=0; i < array.length; i++){
-			runWords(i, array);
+// 	}
+// 	function runRunWords(array){
+// 		for(i=0; i < array.length; i++){
+// 			runWords(i, array);
 
-		}
-	}
+// 		}
+// 	}
 
-// 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A RHYTHM HAS THE POWER TO</span>");}, 0 );
-//
-//
-// 	setTimeout(runRunWords(power), 3000);
-// 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>A BEAT CAN MAKE YOU FEEL</span>");}, 9000);
-// 	setTimeout(function(){runRunWords(feel);}, 5000);
-//
-// 	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 17000);
-// setTimeout(function(){	  $('.real-text').show(); $('.cta-bttn').show();}, 19000);
-// setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 27500);
-// setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 28000);
-// setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 28250);
-
-// SHORTER TIMER FUNCTIONS
-
-	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>MUSIC CAN MAKE YOU FEEL</span>");}, 0);
-	setTimeout(function(){runRunWords(feel);}, 1500);
-
-	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 9500);
-setTimeout(function(){	  $('.real-text').show(); $('.cta-bttn').show();}, 11500);
-setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 20000);
-setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 20500);
-setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 20750);
+// // function switchTimeout(){
+// // 	setTimeout(
+// // 		function(){
+// // 			$('.text-area').html("<span class='sentence-text'>MUSIC CAN MAKE YOU FEEL</span>")
+// // 		}, 0); 
+// // 		return Promise(
+// // 			(res,rej)=>{
+// // 				res();
+// // 				rej()
+// // 		})
+// // }
+// // switchTimeout()
+// function wordMob(){
+// 	$('.text-area').html("<span class='sentence-text'>MUSIC CAN MAKE YOU FEEL</span>")
+// }
+// 	setTimeout(function(){$('.text-area').html("<span class='sentence-text'>MUSIC CAN MAKE YOU FEEL</span>");}, 0);
+// 	setTimeout(function(){runRunWords(feel);}, 1500);
+// setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 9500);
+// setTimeout(function(){	  $('.real-text').show(); $('.cta-bttn').show();}, 11500);
+// setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 20000);
+// setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 20500);
+// setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 20750);
 
 // SHORTER TIMER FUNCTIONS OVER
 
 	//---------- TIMER FUNCTIONS END
 
 	// ----------- TIMER FUNCTIONS SKIP
-//
-// 	setTimeout(function(){$('.text-area-wrap').html("<span class='pulse'></span>");}, 0);
-// setTimeout(function(){	$('.real-text').show(); $('.cta-bttn').show(); $('.real-text:eq(1)').html("BOISE, ID <p class='record-img' description='record; Created by Mauvais Poil'></p> EST. A FEW YEARS AGO");}, 2000);
-// setTimeout(function(){	$('.real-text:eq(0)').addClass("glitch-mob");}, 10500);
-// setTimeout(function(){	$('.real-text:eq(0)').html("BOISE, ID <span class='record-img' description='record; Created by Mauvais Poil'></span> EST. A FEW YEARS AGO");}, 10500);
-// setTimeout(function(){	$('.real-text:eq(0)').removeClass("glitch-mob");}, 11250);
-
+	
 	// SKIP COMPLETE
 
 	//-------------- EVENT LISTENER FUNCTIONS
