@@ -36,8 +36,8 @@
 
 .background-1{
 	
-    background-image: url(hands-crowd-bg.gif);
-    background-image: url(dancing.jpg);
+    background-image: image-url('hands-crowd-bg.gif');
+    background-image: image-url('dancing.jpg');
     background-size: cover;
 	
 }
@@ -89,33 +89,33 @@
 		}
 	}
 	.wedding-bg{
-	    background-image: url(wedding-hands-sml.jpg);
+	    background-image: image-url('wedding-hands-sml.jpg');
 		.weddings{
-		    background-image: url(weddings.svg);
+		    background-image: image-url('weddings.svg');
 		}
 	}
 	
 	.party-bg{
-	    background-image: url(party-sml.jpg);
+	    background-image: image-url('party-sml.jpg');
 		.parties{
-		    background-image: url(parties.svg);
+		    background-image: image-url('parties.svg');
 			color: $first;
 		}
 	}
 	
 	.dance-bg{
-	    background-image: url(dance-sml.jpg);
+	    background-image: image-url('dance-sml.jpg');
 		.dances{
-		    background-image: url(dances.svg);
+		    background-image: image-url('dances.svg');
 			color: $first;
 
 		}
 	}
 	
 	.special-event-bg{
-		background-image:url(special-events-sml.jpeg);
+		background-image:image-url('special-events-sml.jpeg');
 		.special-events{
-		    background-image: url(special-events.svg);
+		    background-image: image-url('special-events.svg');
 		}
 	}
 }
@@ -136,7 +136,7 @@
 	color:$second;
 }
 .background-4{
-	background-image:url(record-player-sml.jpg);
+	background-image:image-url('record-player-sml.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
     background-position: center;
@@ -206,7 +206,7 @@ h1.real-text{
 	margin-top:68px;
 }
 .record-img{
-    background-image: url(record.svg);
+    background-image: image-url('record.svg');
 	background-size:cover;
     height: 1em;
     display: inline-block;
@@ -279,7 +279,7 @@ $bg-light: #404040;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: url(https://45.media.tumblr.com/4fb4f6cf9f87bce0d1047d7e5a3b04c6/tumblr_n18a97QEqn1s73qs0o1_500.gif);
+		background: image-url('https://45.media.tumblr.com/4fb4f6cf9f87bce0d1047d7e5a3b04c6/tumblr_n18a97QEqn1s73qs0o1_500.gif');
 		opacity: 0.1;
 	}
 }
@@ -315,7 +315,7 @@ $svg : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$w} #{$h}"><polyl
   &:after{
     content:'';
     display:block;
-    background:url('data:image/svg+xml;utf8,#{$svg}') 0 0 no-repeat;
+    background:image-url('data:image/svg+xml;utf8,#{$svg}') 0 0 no-repeat;
   // background-size:$w $w;
     width:100%; height:100%;
     position:absolute;
@@ -404,7 +404,7 @@ $svg : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$w} #{$h}"><polyl
   filter:url("#glitch");
 }
 .text-area{
-  -webkit-filter: url("#glitch");
+  -webkit-filter:url("#glitch");
   filter:url("#glitch");
 }
 }
@@ -432,12 +432,12 @@ iPad 3
 @media only screen  and (min-width : 1224px) {
 
 //.glitch-mob{
-//  -webkit-filter: url("#glitch");
-//  filter:url("#glitch");
+//  -webkit-filter: image-url("#glitch");
+//  filter:image-url("#glitch");
 //}
 //.text-area{
-//  -webkit-filter: url("#glitch");
-//  filter:url("#glitch");
+//  -webkit-filter: image-url("#glitch");
+//  filter:image-url("#glitch");
 //}
 }
 

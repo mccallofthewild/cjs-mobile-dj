@@ -15,25 +15,25 @@
   font-family: 'Bungee Hairline';
   font-style: normal;
   font-weight: 400;
-  src: local('Bungee Hairline'), local('BungeeHairline-Regular'), url(bungee-hairline.woff) format('woff');
+  src: local('Bungee Hairline'), local('BungeeHairline-Regular'), font-url('bungee-hairline.woff') format('woff');
 }
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
-  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(quicksand.woff) format('woff');
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), font-url('quicksand.woff') format('woff');
 }
 @font-face {
   font-family: 'Bungee Hairline';
   font-style: normal;
   font-weight: 400;
-  src: local('Bungee Hairline'), local('BungeeHairline-Regular'), url(bungee-hairline.woff2) format('woff2');
+  src: local('Bungee Hairline'), local('BungeeHairline-Regular'), font-url('bungee-hairline.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
-  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(quicksand.woff2) format('woff2');
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), font-url('quicksand.woff2') format('woff2');
 }
 //@keyframes trans-bg{
 //	from{background: rgba(34, 40, 49, 0.9);}
