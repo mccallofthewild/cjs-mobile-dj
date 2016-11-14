@@ -224,6 +224,8 @@ h1.real-text{
 }
 .dark-row{
     background: rgba(34,40,49,0.65);
+	height:100%;
+	width: 100%;
 }
 .second-row{
 }
@@ -315,7 +317,7 @@ $svg : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$w} #{$h}"><polyl
   &:after{
     content:'';
     display:block;
-    background:image_url('data:image/svg+xml;utf8,#{$svg}') 0 0 no-repeat;
+    background:url('data:image/svg+xml;utf8,#{$svg}') 0 0 no-repeat;
   // background-size:$w $w;
     width:100%; height:100%;
     position:absolute;

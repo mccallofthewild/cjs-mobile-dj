@@ -1,7 +1,7 @@
 .logo-image{
     mix-blend-mode: multiply;
 }
-.container-fluid{
+.bg{
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,16 +10,37 @@
     background-image: image_url('confetti-dark.jpg');
 }
 .background-7{
-    background-image:image_url('img10.jpg')
+    background-image:image_url('img10.jpg');
+    position: relative;
+    height:77%;
+    display: flex;
+}
+.background-8{
+    background-image:image_url('confetti-min.jpg');
+    height:77%;
 }
 
 .in-block-cta-btn{
     background-color:$third;
     color:$white;
 }
+.text-section-container{
+    min-height: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.space-around{
+    justify-content: space-around;
+}
 
 .content-container{
-    height:66%;
+    position: absolute;
     .nested-text{
         margin-top:50%;
     }

@@ -1,65 +1,99 @@
-.container-fluid.background-5
-	.row.dark-row
-		.row.nav-row
-			/ %h1 CJ's Mobile DJ
-			/ %a.bttn.open-bttn.nav-bttn{style:"display:none;"} GET A QUOTE
+.container-fluid
+	.row.background-5.bg
+		.dark-row
+			.container-fluid
+				.row.nav-row
+					/ %h1 CJ's Mobile DJ
+					/ %a.bttn.open-bttn.nav-bttn{style:"display:none;"} GET A QUOTE
 
-			.col-sm-1.col-xs-0
-			.col-sm-5.col-xs-12.text-left
-				%a{href:"#{root_path}"}
-					%h1 
-						=image_tag "heart-logo-square.svg", style:"max-height:1em; max-width:1em;", class:"logo-image"
-						%span CJ's Mobile DJ
-			.col-sm-5.col-xs-12
-				%a.bttn.open-bttn.nav-bttn GET A QUOTE
-			.col-md-1.col-xs-0
-		.col-xs-0.col-md-2
-		.col-xs-12.col-md-8
-			.flex-area
-				%h2.real-text.animated.fadeIn The soundtrack to your happily ever after
-				.text-area-wrap
-					-# %span.text-area.text-area-main#text-area
-				/ %h2.real-text.animated.fadeIn{style:"display:none; animation-duration:3s; animation-delay: 1.75s;"} GIVE YOUR NEXT EVENT A PULSE
-				%a.bttn.open-bttn.animated.fadeIn.cta-bttn{style:"margin-bottom:-15%"} LET'S DANCE!
-		.col-xs-12.col-md-2
-.container-fluid.background-3
-	%h3
-		Your Checklist Just Got Shorter
-		%i.fa.fa-check
-		%br
-		%small
-			At CJ's Mobile DJ, we believe 
-	.row.second-row
-		.col-xs-12.col-md-10.col-md-offset-1
-			.row
-				.col-xs-12.col-md-4
-					-# =image_tag 'perfect-fit.svg', class:'action-icon'
-					%h4 STEP 1
-					%h4 Show up
-				.col-xs-12.col-md-4
-					-# =image_tag 'speaker.svg', class:'action-icon'
-					%h4 STEP 2
-					%h4 Say "I do"
-				.col-xs-12.col-md-4
-					-# =image_tag 'mic.svg', class:'action-icon'
-					%h4 STEP 3
-					%h4 Dance the night away
-	%br
-	%br
-	%a.bttn.open-bttn.animated.fadeIn.cta-bttn.in-block-cta-btn SIGN ME UP!
--# .container-fluid.background-6
--# 	%h3 WE DO IT ALL
-	.row.second-row
-.container-fluid.background-7
-	.row.second-row.dark-row.content-container
-		.col-md-4.col-md-offset-4
-			.nested-text
-				-# %h3 
-				%h3.text-left We bring the music.
-				%h3.text-left You bring the party.
-		.col-xs-0.col-md-7
-.container-fluid.background-last
-	.row.footer
+					.col-sm-1.col-xs-0
+					.col-sm-5.col-xs-12.text-left
+						%a{href:"#{root_path}"}
+							%h1 
+								=image_tag "heart-logo-square.svg", style:"max-height:1em; max-width:1em;", class:"logo-image"
+								%span CJ's Mobile DJ
+					.col-sm-5.col-xs-12
+						%a.bttn.open-bttn.nav-bttn GET A QUOTE
+					.col-md-1.col-xs-0
+			.col-xs-0.col-md-2
+			.col-xs-12.col-md-8
+				.flex-area
+					%h2.real-text.animated.fadeIn The soundtrack to your happily ever after
+					.text-area-wrap
+						-# %span.text-area.text-area-main#text-area
+					/ %h2.real-text.animated.fadeIn{style:"display:none; animation-duration:3s; animation-delay: 1.75s;"} GIVE YOUR NEXT EVENT A PULSE
+					%a.bttn.open-bttn.animated.fadeIn.cta-bttn{style:"margin-bottom:-15%"} LET'S DANCE!
+			.col-xs-12.col-md-2
+	.row.background-3.text-section-container.bg
+		%h3
+			Your Checklist Just Got Shorter
+			%i.fa.fa-check
+			%br
+		.second-row
+			.col-xs-12.col-md-10.col-md-offset-1
+				.row
+					.col-xs-12.col-md-4
+						-# =image_tag 'perfect-fit.svg', class:'action-icon'
+						%h4 STEP 1
+						%h4 Show up
+					.col-xs-12.col-md-4
+						-# =image_tag 'speaker.svg', class:'action-icon'
+						%h4 STEP 2
+						%h4 Say "I do"
+					.col-xs-12.col-md-4
+						-# =image_tag 'mic.svg', class:'action-icon'
+						%h4 STEP 3
+						%h4 Dance the night away
+				.row
+					.col-md-4.col-md-offset-4
+						%a
+							.bttn.open-bttn.animated.fadeIn.cta-bttn.in-block-cta-btn SIGN ME UP!
+	-# .container-fluid.background-6
+	-# 	%h3 WE DO IT ALL
+		.row.second-row
+	.row.background-7.text-section-container.bg
+		.second-row.dark-row.content-container
+			.col-md-4.col-md-offset-4
+				.nested-text
+					-# %h3 
+					%h3.text-left We bring the music.
+					%h3.text-left You bring the party.
+			.col-xs-0.col-md-7
+	.row.background-3.text-section-container
+		.row.second-row
+			.col-xs-12.col-md-10.col-md-offset-1
+				-# =image_tag 'speaker.svg', class:'action-icon'
+				%h4 You've waited your entire life for this day.
+				%h4 Don't leave your wedding's entertainment to chance.
+				-# =image_tag 'mic.svg', class:'action-icon'
+				%br
+				%br
+				%a.bttn.open-bttn.animated.fadeIn.cta-bttn.in-block-cta-btn LEAVE IT TO US
+	.row
+		.background-8.text-section-container.bg
+			.dark-row.flex-col.space-around
+				.col-xs-12.col-md-10.col-md-offset-1
+					.col-xs-12.col-md-4
+						-# =image_tag 'speaker.svg', class:'action-icon'
+						%h1
+							%i.fa.fa-smile-o.fa-lg
+						%h3 3,457
+						%h3 Total Smiles
+					.col-xs-12.col-md-4
+						-# =image_tag 'speaker.svg', class:'action-icon'
+						%h1
+							%i.fa.fa-child.fa-lg
+						%h3 238
+						%h3 Bad Dance Moves
+					.col-xs-12.col-md-4
+						-# =image_tag 'speaker.svg', class:'action-icon'
+						%h1
+							%i.fa.fa-heartbeat.fa-lg
+						%h3 87
+						%h3 LOL Memories
+	-# .container-fluid.background-6
+	-# 	%h3 WE DO IT ALL
+	.row.second-row.row.footer.background-last
 		.col-md-6.col-md-offset-3.footer-col
 			=image_tag "record.svg", class:"footer-image" 
 			%div
@@ -81,81 +115,81 @@
 				%a{href:"https://www.facebook.com/cjsmobiledj/", target:"_blank"}
 					%i.fa.fa-facebook.fa-3x
 
-	
-	
-<div class="iframe-html" style="height:auto;">
-<body>
-<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://mccallalexander.typeform.com/to/gC8NDr" style="display:none;"></iframe>
-<script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
-</body>
-</div>
-			
-			
-.nav-row-solid.nav-row-close
-	%a.bttn.nav-bttn.close-bttn{style:"display:block;z-index:9999999999"} EXIT FORM
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-/ <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-/ <defs>
-/ <filter id="glitch" x="0" y="0">
-/ <feColorMatrix in="SourceGraphic" mode="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r" />
-/
-/ <feOffset in="r" result="r" dx="-5">
-/ <animate attributeName="dx" attributeType="XML" values="0; -5; 0; -18; -2; -4; 0 ;-3; 0" dur="0.2s" repeatCount="indefinite"/>
-/ </feOffset>
-/ <feColorMatrix in="SourceGraphic" mode="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="g"/>
-/ <feOffset in="g" result="g" dx="-5" dy="1">
-/ <animate attributeName="dx" attributeType="XML" values="0; 0; 0; -3; 0; 8; 0 ;-1; 0" dur="0.15s" repeatCount="indefinite"/>
-/ </feOffset>
-/ <feColorMatrix in="SourceGraphic" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="b"/>
-/ <feOffset in="b" result="b" dx="5" dy="2">
-/ <animate attributeName="dx" attributeType="XML" values="0; 3; -1; 4; 0; 2; 0 ;18; 0" dur="0.35s" repeatCount="indefinite"/>
-/ </feOffset>
-/ <feBlend in="r" in2="g" mode="screen" result="blend" />
-/ <feBlend in="blend" in2="b" mode="screen" result="blend" />
-/ </filter>
-/ </defs>
-/ </svg>
+		
+		
+	<div class="iframe-html" style="height:auto;">
+	<body>
+	<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://mccallalexander.typeform.com/to/gC8NDr" style="display:none;"></iframe>
+	<script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
+	</body>
+	</div>
+				
+				
+	.nav-row-solid.nav-row-close
+		%a.bttn.nav-bttn.close-bttn{style:"display:block;z-index:9999999999"} EXIT FORM
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+				
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+				
+				
+				
+	/ <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+	/ <defs>
+	/ <filter id="glitch" x="0" y="0">
+	/ <feColorMatrix in="SourceGraphic" mode="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r" />
+	/
+	/ <feOffset in="r" result="r" dx="-5">
+	/ <animate attributeName="dx" attributeType="XML" values="0; -5; 0; -18; -2; -4; 0 ;-3; 0" dur="0.2s" repeatCount="indefinite"/>
+	/ </feOffset>
+	/ <feColorMatrix in="SourceGraphic" mode="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="g"/>
+	/ <feOffset in="g" result="g" dx="-5" dy="1">
+	/ <animate attributeName="dx" attributeType="XML" values="0; 0; 0; -3; 0; 8; 0 ;-1; 0" dur="0.15s" repeatCount="indefinite"/>
+	/ </feOffset>
+	/ <feColorMatrix in="SourceGraphic" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="b"/>
+	/ <feOffset in="b" result="b" dx="5" dy="2">
+	/ <animate attributeName="dx" attributeType="XML" values="0; 3; -1; 4; 0; 2; 0 ;18; 0" dur="0.35s" repeatCount="indefinite"/>
+	/ </feOffset>
+	/ <feBlend in="r" in2="g" mode="screen" result="blend" />
+	/ <feBlend in="blend" in2="b" mode="screen" result="blend" />
+	/ </filter>
+	/ </defs>
+	/ </svg>
 
-		
-		
-		
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 			
 			
 			
