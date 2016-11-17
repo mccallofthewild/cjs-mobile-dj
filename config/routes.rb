@@ -3,12 +3,11 @@ Rails.application.routes.draw do
   get '/blog/:pathname' => 'posts#show', as: :blog_post
   get '/blog' => 'posts#index'
   get '/parties' => 'static_pages#home'
-  get '/weddings' => 'static_pages#weddings'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # get '/blog' => 'posts#index'
   # You can have the root of your site routed with "root"
- root 'static_pages#home'
+ root 'static_pages#weddings'
  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
