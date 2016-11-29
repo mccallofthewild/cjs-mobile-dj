@@ -141,7 +141,7 @@ function hoverText(selector, text, bgColor, bgImage){
 // 		}
 // 	);
 }
-var events = ['.weddings', '.parties', '.dances', '.special-events']
+var events = ['.weddings', '.parties', '.dances', '.special-events'];
 
 var eventText = ['make your wedding a beautiful one.', 'Make your party rock.', 'Dance your pants off', 'special-events']
 
