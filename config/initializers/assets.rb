@@ -10,4 +10,4 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 Rails.application.config.assets.precompile += %w( public.js )
 # Rails.application.config.assets.precompile += %w( static_pages.css )
-Rails.application.config.assets.precompile += %w(static_pages.* posts.*)  
+Rails.application.config.assets.precompile += %w(static_pages.css static_pages.js posts.css posts.js)  
