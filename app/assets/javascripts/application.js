@@ -219,4 +219,15 @@ for(i = 0; i < 4; i++){
 			}
 		}
 	})
+	.controller('AnalyticsController', function(){
+		var ac = this;
+		var category = Date.now()<1488393283769? 'Winter Wedding Campaign' : 'General';
+		ac.sendEventData = function(object, action){
+			if(window.location.hostname.includes('cjyourdj')){
+				ga('send', 'event', object, action, category);
+				console.log('Sending Data...')
+			}
+			console.log('working')
+		}
+	})
 })();

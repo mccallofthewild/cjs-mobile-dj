@@ -9,6 +9,9 @@
     top:0;left:0;right:0;bottom:0;
     background: $first;
     z-index: 3000;
+    @include sml{
+        padding-top:33%;
+    }
     .action-box{
         .btn-action{
             display: inline-block;
@@ -16,6 +19,9 @@
             background-color:$third;
             border-radius: 100%;
             border:none;
+            min-width:12rem;
+            min-height:12rem;
+
             padding:4rem 2rem;
             margin:5%;
             font-size: 2rem;
