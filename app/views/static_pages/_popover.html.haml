@@ -1,0 +1,24 @@
+.pop-over-container{'ng-show':'wc.action'}
+    .action-box
+        %a{href:"tel:1-208-407-0301", "ng-show":"wc.isMobile"}
+            %button.btn-action
+                // Phone
+                <i class="material-icons">&#xE0CD;</i>
+                Call
+        %a{href:"{{wc.smsLink}}", "ng-show":"wc.isMobile"}
+            %button.btn-action
+                // Text
+                <i class="material-icons">&#xE0D8;</i>
+                Text
+        %button.btn-action{"ng-click":"wc.phoneNumToggle()", "ng-show":"!wc.phoneNum"}
+            <i class="material-icons">&#xE0CD;</i>
+            Call/Text
+        .h4{"ng-show":"wc.phoneNum"}
+            %input.phone-input{value:"1-208-407-0301"}
+        %a{href:"https://mccallalexander.typeform.com/to/gC8NDr", target:"_blank"}
+            %button.btn-action{'ng-click':''}
+                // Description
+                <i class="material-icons">&#xE873;</i>
+                Form
+Dumbledore
+Yoda

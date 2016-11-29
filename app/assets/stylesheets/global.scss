@@ -1,0 +1,49 @@
+
+html{
+    font-size:16px;
+    @include sml{
+        font-size:7.5px;
+    }
+}
+body{
+  background:$first;
+  color:$fourth;
+  text-align:center;
+  font-family: Quicksand, Sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+
+}
+.inline{
+	display:inline;
+}
+.accent{
+	color:$third;
+}
+
+.h1{
+    font-size: 3rem;
+}
+.h2{
+	font-size:2.5rem;
+}
+.h3{
+	font-size:2.3rem;
+    @extend .h4;
+}
+.h4{
+	font-size:1.75rem;
+	
+}
+ol{
+    li{
+        @extend .h3;
+        text-align: left;
+    }
+}
+.p{
+	font-size:1.4rem;
+}
+a, a:hover, a:focus{
+	text-decoration:none;
+	color:inherit;
+}

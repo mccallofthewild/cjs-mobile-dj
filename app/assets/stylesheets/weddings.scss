@@ -1,3 +1,4 @@
+@import 'pop-over';
 .logo-image{
     mix-blend-mode: multiply;
 }
@@ -45,11 +46,19 @@
     left:0;
     right:0;
     bottom:0;
-
-
     .nested-text{
         margin-top:50%;
     }
+}
+
+.stat-item{
+    font-size:1.75rem;
+}
+.reviews-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .footer{
@@ -59,3 +68,4 @@
         }
     }
 }
+

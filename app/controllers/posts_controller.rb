@@ -10,6 +10,17 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find_by(pathname: params[:pathname])
+    
+    respond_to do |format|
+      if @post.save
+        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.json { render :show, status: :created, location: @post.pathname }
+      else
+        format.html { render :new }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   # GET /posts/new
@@ -25,11 +36,12 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
+    @post.pathname = @post.title.scan(/\w|\s/).join('').downcase.truncate(20, omission:'').split(" ").join('-')
 
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render :show, status: :created, location: @post }
+        format.json { render :show, status: :created, location: @post.pathname }
       else
         format.html { render :new }
         format.json { render json: @post.errors, status: :unprocessable_entity }
@@ -65,7 +77,7 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post =  Post.find_by(:pathname => params[:pathname]) || Post.find_by(:id => params[:id])
+      @post =  Post.find_by(pathname: params[:pathname])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

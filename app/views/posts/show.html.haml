@@ -6,7 +6,7 @@
     .col-xs-12.col-md-8.col-md-offset-2
       %p{id:"notice"}=notice
       %h1= @post.title
-      %h2= @post.subtitle
+      .h2= @post.subtitle
       %p!="by <em>#{@post.author}</em>"
       %p.fr-view!= @post.body
       =link_to 'Edit', edit_post_path(@post)

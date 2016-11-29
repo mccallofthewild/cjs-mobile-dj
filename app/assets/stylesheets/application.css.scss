@@ -8,8 +8,9 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 //@import "animate";
-
 @import "variables";
+@import "mediaqueries";
+@import "global";
 @import "nav";
 @font-face {
   font-family: 'Bungee Hairline';
@@ -43,42 +44,3 @@
 //	from{background-image:url(http://7art-screensavers.com/screens/white_noise/white-noise-animated-wallpaper.gif);}
 //	to{background-image:url(http://static.wixstatic.com/media/3678b6_293a7f9fb21b4348bb370b4f2ab06e9c.gif);}
 //}
-
-
-// VARIABLE DEFINITIONS
-
-body{
-  background:$first;
-  color:$fourth;
-  text-align:center;
-  font-family: Quicksand, Sans-serif;
-    /*font-family: 'Montserrat', sans-serif;*/
-
-}
-.inline{
-	display:inline;
-}
-.accent{
-	color:$third;
-}
-
-h1{
-    font-size: 3em;
-}
-h2{
-	font-size:2.5em;
-}
-h3{
-	font-size:2.3em;
-}
-h4{
-	font-size:1.75em;
-	
-}
-p{
-	font-size:1.4em;
-}
-a, a:hover, a:focus{
-	text-decoration:none;
-	color:inherit;
-}

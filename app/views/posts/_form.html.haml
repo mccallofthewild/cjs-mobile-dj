@@ -1,7 +1,7 @@
 // -if @post.errors.any?
 //   .error#error_explanation
-//   %h2= pluralize(@post.errors.count, "error")
-//   %h2= prohibited this post from being saved:
+//   .h2= pluralize(@post.errors.count, "error")
+//   .h2= prohibited this post from being saved:
 //   -@post.errors.full_messages.each do |message|
 //     %li=message
 .container-fluid.form-page
@@ -20,7 +20,7 @@
             =f.text_area :author, class:"form-control simple-entry", required:'true'
           .field
             =f.label :pathname
-            =f.text_field :pathname, class:"form-control simple-entry", required:'true'
+            =f.text_field :pathname, class:"form-control simple-entry", required:'false'
       .row
         .col-xs-12
           .field
