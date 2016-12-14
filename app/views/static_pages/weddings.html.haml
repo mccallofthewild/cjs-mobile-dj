@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 
 .container-fluid{'ng-controller':'WeddingsController as wc'}
 	.row.background-5.bg
@@ -7,7 +8,7 @@
 				.row.nav-row
 					.col-sm-1.col-xs-0
 					.col-sm-5.col-xs-12.text-left
-						%a{href:"#{root_path}"}
+						%a{href:"#{root_path}", "ng-click":"wc.action=false"}
 							.h1 
 								=image_tag "heart-logo-square.svg", fill:'pink', style:"max-height:1em; max-width:1em;", class:"logo-image"
 								%span 
