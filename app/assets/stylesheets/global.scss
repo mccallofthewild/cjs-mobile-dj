@@ -46,6 +46,9 @@ a, a:hover, a:focus{
 	text-decoration:none;
 	color:inherit;
 }
-.hidden{
+.seoHide{
     display:none;
+}
+.unhidden{
+    display:auto !important;
 }
