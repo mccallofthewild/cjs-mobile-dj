@@ -73,4 +73,7 @@
 .nav-row .h1{
     font-family: 'Bungee', cursive;
     font-weight:1;
+    @include sml{
+        text-align: center;
+    }
 }

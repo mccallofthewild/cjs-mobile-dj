@@ -19,6 +19,11 @@
 	.nav-bttn{
 		margin-top:20px;
 		float:right;
+		@include sml{
+			width:100%;
+			padding:4px;
+			margin-top:0;
+		}
 		
 	}
 	.h1{
@@ -30,6 +35,9 @@
 	transition:color 0.3s linear, background-color 0.3s linear;
 	background-color:$white;
 	color:$first;
+	@include sml{
+		box-shadow: 1px 1px 30px rgba(0,0,0,0.1);
+	}
 	.nav-bttn{
 		color:$white;
 		background-color:$third;
