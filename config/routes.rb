@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts, param: :pathname
-  get '/blog/:pathname' => 'posts#show', as: :blog_post
-  get '/blog' => 'posts#index'
+  scope "/blog" do
+    resources :posts
+  end
   get '/parties' => 'static_pages#home'
-
-  get '/posts/:pathname' => 'posts#show'
   get '/form' => 'static_pages#typeform'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

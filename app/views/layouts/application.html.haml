@@ -2,6 +2,9 @@
 	%title CJ's Mobile DJ - Boise, Idaho | Weddings | Parties | Dances | Special Events
 	%meta{name:"description", content:"GIVE YOUR NEXT EVENT A PULSE."}
 	%meta{name:"keywords", content:"boise dj, boise wedding dj, idaho dj, best boise djs, idaho wedding dj, mccall wedding dj, sun valley wedding dj, boise event lighting, boise wedding lighting, boise dj, boise disc jockey, idaho disc jockey, boise event lighting"}
+	-if action_name =~ /(new)|(edit)/
+		%meta{name:"robots", content:"noindex, nofollow"}
+
 	= javascript_include_tag 'angular', 'data-turbolinks-track' => true 
 	=favicon_link_tag 'record.png', rel: 'shortcut icon', type: 'image/png'
 	-fonts = %w(Lusitana Open+Sans Roboto:900 Anton Chelsea+Market Montserrat)

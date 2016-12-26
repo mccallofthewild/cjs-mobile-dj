@@ -1,12 +1,12 @@
-// -if @post.errors.any?
-//   .error#error_explanation
-//   .h2= pluralize(@post.errors.count, "error")
-//   .h2= prohibited this post from being saved:
-//   -@post.errors.full_messages.each do |message|
-//     %li=message
 .container-fluid.form-page
   .form-container
     =form_for(@post) do |f|
+      -if @post.errors.any?
+        .error#error_explanation
+        .h2= pluralize(@post.errors.count, "error")
+        .h2 prohibited this post from being saved:
+        -@post.errors.full_messages.each do |msg|
+          %li.h4=msg
       .row
         .form-field-container
           .field
