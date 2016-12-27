@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
   scope "/blog" do
     resources :posts
   end
   get '/parties' => 'static_pages#home'
   get '/form' => 'static_pages#typeform'
+  get '/admin' => 'admin#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # get '/blog' => 'posts#index'

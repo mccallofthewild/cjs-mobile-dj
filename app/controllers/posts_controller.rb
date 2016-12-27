@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, except:[:show, :index]
+  before_action :check_if_current_user_is_clancy, except:[:show, :index]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -75,6 +77,12 @@ class PostsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post =  Post.find_by(pathname: params[:id])
+    end
+
+    def check_if_current_user_is_clancy
+      if current_user.email.downcase != "clancy@cjyourdj.com"
+        redirect_to "/"
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
