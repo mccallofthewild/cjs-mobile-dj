@@ -1,25 +1,25 @@
-.pop-over-container.seoHide{'ng-show':'wc.action', style:"display:none;", "ng-style":"{'display':'initial'}" }
+.pop-over-container.seoHide{'v-show':'wc.action', style:"display:none;", ":style":"{'display':'initial'}" }
     .action-box
-        %a{href:"tel:1-208-407-0301", "ng-show":"wc.isMobile"}
+        %a{href:"tel:1-208-407-0301", "v-show":"wc.isMobile"}
             %button.btn-action
                 // Phone
                 <i class="material-icons">&#xE0CD;</i>
                 Call
-        %a{href:"{{wc.smsLink}}", "ng-show":"wc.isMobile"}
+        %a{":href":"wc.smsLink", "v-show":"wc.isMobile"}
             %button.btn-action
                 // Text
                 <i class="material-icons">&#xE0D8;</i>
                 Text
-        %button.btn-action{"ng-click":"wc.phoneNumToggle()", "ng-show":"!wc.phoneNum && !wc.isMobile"}
+        %button.btn-action{"@click":"wc.phoneNumToggle()", "v-show":"!wc.phoneNum && !wc.isMobile"}
             <i class="h1 material-icons">&#xE0CD;</i>
             Call
-        %button.btn-action{"ng-click":"wc.phoneNumToggle()", "ng-show":"!wc.phoneNum && !wc.isMobile"}
+        %button.btn-action{"@click":"wc.phoneNumToggle()", "v-show":"!wc.phoneNum && !wc.isMobile"}
             <i class="material-icons">&#xE0D8;</i>
             Text
-        .h4{"ng-show":"wc.phoneNum"}
+        .h4{"v-show":"wc.phoneNum"}
             %input.phone-input{value:"1-208-407-0301"}
         %a{href:"/form", target:"_blank"}
-            %button.btn-action{'ng-click':''}
+            %button.btn-action{'@click':''}
                 // Description
                 <i class="material-icons">&#xE873;</i>
                 Form

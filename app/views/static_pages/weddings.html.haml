@@ -1,32 +1,8 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-
-.container-fluid{'ng-controller':'WeddingsController as wc'}
-	.row.background-5.bg
-		.dark-row
-			.container-fluid
-				.row.nav-row
-					.col-sm-1.col-xs-0
-					.col-sm-5.col-xs-12.text-left
-						%a{href:"#{root_path}", "ng-click":"wc.action=false"}
-							.h1 
-								=image_tag "heart-logo-square.svg", fill:'pink', style:"max-height:1em; max-width:1em;", class:"logo-image seoHide", "ng-style":"{'display':'initial'}"
-								%span 
-									CJ's Mobile DJ
-					.col-sm-3.text-right
-						%div.h2{"ng-show":"!wc.isMobile"} <i class="material-icons seoHide" ng-style="display:initial;">place</i> Boise, Idaho
-					.col-sm-3.col-xs-12
-						%a.bttn.open-bttn.nav-bttn.seoHide{'ng-click':'wc.toggleProp("action"); ac.sendEventData("cta-btn-0", "click", wc.action)', "ng-show":"!wc.action", "ng-style":"{'display':'initial'}"} GET A QUOTE
-						%a.bttn.open-bttn.nav-bttn.seoHide{'ng-click':'wc.toggleProp("action");', "ng-show":"wc.action", "ng-style":"{'display':'initial'}" } EXIT
-					.col-md-1.col-xs-0
-			.col-xs-0.col-md-2
-			.col-xs-12.col-md-8
-				.flex-area
-					.h2.real-text.animated.fadeIn The soundtrack to your happily ever after
-					.text-area-wrap
-						-# %span.text-area.text-area-main#text-area
-					%a.bttn.open-bttn.animated.fadeIn.cta-bttn{'ng-click':'wc.toggleProp("action"); ac.sendEventData("cta-btn-1", "click")', style:"margin-bottom:-15%"} LET'S DANCE!
-			.col-xs-12.col-md-2
+<script src='//www.weddingwire.com/assets/vendor/widgets/my-reviews.js' type='application/javascript'></script>
+.container-fluid{id:"weddings"}
+	=render "static_pages/wedding-partials/nav"
 	.row.background-3.text-section-container.bg
 		.h3
 			Your Checklist Just Got Shorter
@@ -50,7 +26,7 @@
 				.row
 					.col-md-4.col-md-offset-4
 						%a
-							.bttn.open-bttn.animated.fadeIn.cta-bttn.in-block-cta-btn{'ng-click':'wc.toggleProp("action"); ac.sendEventData("cta-btn-2", "click")'}  SIGN ME UP!
+							.bttn.open-bttn.animated.fadeIn.cta-bttn.in-block-cta-btn{'@click':'wc.toggleProp("action"); sendEventData("cta-btn-2", "click")'}  SIGN ME UP!
 		.row.second-row
 	.row.background-7.text-section-container.bg
 		.second-row.dark-row.content-container
@@ -69,7 +45,7 @@
 				-# =image_tag 'mic.svg', class:'action-icon'
 				%br
 				%br
-				%a.bttn.open-bttn.animated.fadeIn.cta-bttn.in-block-cta-btn{'ng-click':'wc.toggleProp("action"); ac.sendEventData("cta-btn-3", "click")'}  LEAVE IT TO US
+				%a.bttn.open-bttn.animated.fadeIn.cta-bttn.in-block-cta-btn{'@click':'wc.toggleProp("action"); sendEventData("cta-btn-3", "click")'}  LEAVE IT TO US
 	.row
 		.background-8.text-section-container.bg
 			.dark-row.flex-col.space-around
@@ -113,7 +89,6 @@
 			%br
 			%br
 			.reviews-container
-				<script src='//www.weddingwire.com/assets/vendor/widgets/my-reviews.js' type='application/javascript'></script>
 				<div class='ww-reset ww-reviews-widget' id='ww-widget-reviews'>
 				<div class='ww-reviews-placeholder'>
 				Read all of our wedding reviews on our
@@ -137,7 +112,7 @@
 		.col-md-6.col-md-offset-3.footer-col
 			=image_tag "record.svg", class:"footer-image" 
 			%div
-				%a.bttn.open-bttn{'ng-click':'wc.toggleProp("action"); ac.sendEventData("cta-btn-footer", "click")'}  GET A QUOTE 
+				%a.bttn.open-bttn{'@click':'wc.toggleProp("action"); sendEventData("cta-btn-footer", "click")'}  GET A QUOTE 
 			%address
 				%span Boise, ID
 				%span.accent /

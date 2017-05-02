@@ -1,0 +1,25 @@
+.row.background-5.bg
+  .dark-row
+    .container-fluid
+      .row.nav-row
+        .col-sm-1.col-xs-0
+        .col-sm-5.col-xs-12.text-left
+          %a{href:"#{root_path}", "@click":"wc.action=false"}
+            .h1 
+              =image_tag "heart-logo-square.svg", fill:'pink', style:"max-height:1em; max-width:1em;", class:"logo-image seoHide", "v-style":"{'display':'initial'}"
+              %span 
+                CJ's Mobile DJ
+        .col-sm-3.text-right
+          %div.h2{"v-show":"!wc.isMobile"} <i class="material-icons seoHide" v-style="display:initial;">place</i> Boise, Idaho
+        .col-sm-3.col-xs-12
+          %a.bttn.open-bttn.nav-bttn.seoHide{'@click':'wc.toggleProp("action"); sendEventData("cta-btn-0", "click", wc.action)', "v-show":"!wc.action", "v-style":"{'display':'initial'}"} GET A QUOTE
+          %a.bttn.open-bttn.nav-bttn.seoHide{'@click':'wc.toggleProp("action");', "v-show":"wc.action", "v-style":"{'display':'initial'}" } EXIT
+        .col-md-1.col-xs-0
+    .col-xs-0.col-md-2
+    .col-xs-12.col-md-8
+      .flex-area
+        .h2.real-text.animated.fadeIn The soundtrack to your happily ever after
+        .text-area-wrap
+          -# %span.text-area.text-area-main#text-area
+        %a.bttn.open-bttn.animated.fadeIn.cta-bttn{'@click':'wc.toggleProp("action"); sendEventData("cta-btn-1", "click")', style:"margin-bottom:-15%"} LET'S DANCE!
+    .col-xs-12.col-md-2
