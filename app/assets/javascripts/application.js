@@ -1,7 +1,7 @@
-// = require jquery
-// = require jquery_ujs
-// = require turbolinks
-// = require angular.min
+//CANCEL = require jquery
+//CANCEL = require jquery_ujs
+//CANCEL = require turbolinks
+//CANCEL = require angular.min
 // /=/ require_tree .
 
 
@@ -100,8 +100,48 @@ $(document).ready(function(){
 	
 	// SKIP COMPLETE
 
+
+var colors = ['#364f6b', '#f5f5f5', '#3fc1c9', '#fc5185'];
+function confettiIntro () {
+	var end = Date.now() + (1 * 1000);
+	console.log('confetti running')
+
+	var index = 0;
+	(function frame() {
+		for (let i = 0; i < 5; i++) {
+			if (index == colors.length) {
+				index = 0;
+			}
+			confetti({
+				particleCount: 1,
+				startVelocity: 0,
+				ticks: 200,
+				origin: {
+						x: Math.random(),
+						// since they fall down, start a bit higher than random
+						y: Math.random() - 0.2
+				},
+				colors: [ colors[index++] ]
+			});			
+		}
+
+			if (Date.now() < end) {
+					window.requestAnimationFrame(frame);
+			}
+	}());
+}
+confettiIntro();
+
+$('a').on('click', function (e) {
+	confetti({
+		particleCount: 200,
+		startVelocity: 130
+	});
+});
+
 	//-------------- EVENT LISTENER FUNCTIONS
 $(document).scroll(function(){
+
 	
 	var scrollpos = $('body').scrollTop();
 	var btnpos = $('.cta-bttn').position().top;
@@ -160,7 +200,7 @@ for(i = 0; i < 4; i++){
 
 });
 
-
+var WINDOW = window;
 (function() {
 	'use strict';
 
@@ -189,8 +229,13 @@ for(i = 0; i < 4; i++){
 		var phone = "1-208-407-0301"
 		var message = "Hey CJ! I need a DJ at my "
 		wc.smsLink = "sms:" + phone + bodyTag() + encodeURIComponent(message)
-		wc.toggleProp = (prop)=>{
-			wc[prop] = !wc[prop]
+		wc.toggleProp = function(prop){
+			if (prop == 'action') {
+				return WINDOW.setTimeout(function () {
+					WINDOW.location.assign('/form');
+				}, 500);
+			}
+			wc[prop] = !wc[prop];
 			console.log('working')
 		}
 		function bodyTag(){
