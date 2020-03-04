@@ -58,5 +58,5 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'puma',           '2.11.1'
+  gem 'puma',           '3.12.4'
 end
