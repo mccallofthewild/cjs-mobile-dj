@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rake', '~> 13.0.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.2'
+gem 'rails', '4.2.8'
 # gem 'pg'
 # gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'sprockets-rails', '~> 3.2'
@@ -46,7 +46,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.13'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -60,5 +60,5 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'puma',           '2.11.1'
+  gem 'puma',           '3.8'
 end
