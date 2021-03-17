@@ -11,7 +11,7 @@ gem 'rails', '4.2.8'
 gem 'sprockets-rails', '~> 3.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'haml', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-sass'
 # gem "animate-rails"
