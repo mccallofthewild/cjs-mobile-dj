@@ -2,7 +2,7 @@ ruby '2.6.6'
 # updated cedar stack
 source 'https://rubygems.org'
 
-gem 'rake', '~> 13.0.1'
+gem 'rake', '~> 12.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
