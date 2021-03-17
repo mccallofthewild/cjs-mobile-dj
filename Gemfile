@@ -1,5 +1,5 @@
 # ruby '2.6.6'
-
+# updated cedar stack
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
