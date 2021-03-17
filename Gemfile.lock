@@ -1,3 +1,16 @@
+GIT
+  remote: https://github.com/plataformatec/devise
+  revision: fb48336709bc1a29ff15b7170ed7b33906c66888
+  branch: 3-stable
+  specs:
+    devise (3.5.10)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,13 +73,6 @@ GEM
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     debug_inspector (1.0.0)
-    devise (3.5.10)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      responders
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.15.0)
@@ -194,7 +200,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
   coffee-rails (~> 4.1.0)
-  devise (~> 3.5, >= 3.5.6)
+  devise!
   font-awesome-sass
   haml (~> 4.0, >= 4.0.7)
   jbuilder (~> 2.0)
