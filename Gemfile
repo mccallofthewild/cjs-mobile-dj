@@ -58,7 +58,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.15'
   gem 'rails_12factor'
   gem 'puma',           '3.8'
 end
