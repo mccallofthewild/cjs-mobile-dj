@@ -6,7 +6,7 @@ gem 'rake', '~> 13.0.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
-gem 'pg'
+# gem 'pg'
 # gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'sprockets-rails', '~> 3.2'
 # Use SCSS for stylesheets
